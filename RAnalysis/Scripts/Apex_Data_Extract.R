@@ -4,8 +4,9 @@
 
 
 library("XML")
+library("plyr")
 
-xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806010000&days=3") #read in the date plus x days of Apex data
+xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806010000&days=4") #read in the date plus x days of Apex data
 
 Apex.Data <- ldply(xmlToList(xmlfile), data.frame) #convert xml to dataframe
 
