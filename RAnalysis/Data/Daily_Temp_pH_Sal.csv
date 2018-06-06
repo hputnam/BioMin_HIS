@@ -1,1 +1,178 @@
-Date,Calib.Date,Time,Sample.ID,Treatment,Temperature,pH.MV,Salinity,Period1,Notes20180529,20180530,16:20,Low_Header,Low,27.65,-44.5,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180529,20180530,16:21,Amb_Header,Ambient,27.25,-56.4,32,Test,20180529,20180530,16:22,Conical_2,Low,27.2,-47,32,Test,20180529,20180530,16:23,Conical_3,Low,27.29,-46.6,32,Test,20180529,20180530,16:25,Conical_4,Ambient,27.03,-56.9,32,Test,20180529,20180530,16:24,Conical_5,Ambient,26.93,-56.6,32,Test,20180529,20180530,16:22,Conical_6,Low,27.32,-46.4,32,Test,20180529,20180530,16:28,Conical_7,Ambient,27,-57,32,Test,20180529,20180530,16:27,Conical_8,Ambient,27.01,-56.9,32,Test,20180529,20180530,16:26,Conical_9,Low,27.21,-47.3,32,Test,20180529,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet20180530,20180530,9:21,Low_Header,Low,25.94,-48.5,32,Test,20180530,20180530,9:24,Amb_Header,Ambient,25.7,-55.5,32,Test,20180530,20180530,NA,Conical_1,NA,NA,NA,32,Test,No water running in this yet20180530,20180530,9:23,Conical_2,Low,25.71,-47.9,32,Test,20180530,20180530,9:25,Conical_3,Low,25.71,-48,32,Test,20180530,20180530,9:27,Conical_4,Ambient,25.5,-55.7,32,Test,20180530,20180530,9:28,Conical_5,Ambient,25.52,-55.6,32,Test,20180530,20180530,9:29,Conical_6,Low,25.75,-47.9,32,Test,20180530,20180530,9:30,Conical_7,Ambient,25.54,-55.6,32,Test,20180530,20180530,9:31,Conical_8,Ambient,25.43,-55.7,32,Test,20180530,20180530,9:32,Conical_9,Low,25.73,-48.2,32,Test,20180530,20180530,9:33,Tank_10,Ambient,25.29,-55.3,32,Test,20180530,20180530,9:34,Tank_11,Ambient,25.32,-55.2,32,Test,20180530,20180530,9:35,Tank_12,Ambient,25.22,-55.2,32,Test,20180530,20180530,9:36,Tank_13,Ambient,25.13,-55.8,32,Test,20180530,20180530,9:37,Tank_14,Ambient,25.08,-55.7,32,Test,20180530,20180530,9:38,Tank_15,Ambient,25.57,-55.7,32,Test,20180530,20180530,11:59,Low_Header,Low,26.47,-42.3,32,Test,20180530,20180530,12:00,Conical_2,Low,26.34,-46.5,32,Test,20180530,20180530,12:01,Conical_3,Low,26.35,-46.2,32,Test,20180530,20180530,12:02,Conical_6,Low,26.32,-46.2,32,Test,20180530,20180530,12:03,Conical_9,Low,26.3,-47.4,32,Test,20180530,20180530,11:59,Amb_Header,Ambient,26.06,-56,32,Test,20180530,20180530,12:05,Conical_4,Ambient,26.15,-56.8,32,Test,20180530,20180530,12:04,Conical_5,Ambient,26.1,-56.5,32,Test,20180530,20180530,12:06,Conical_7,Ambient,26.1,-56.9,32,Test,20180530,20180530,12:07,Conical_8,Ambient,26.05,-55.7,32,Test,20180530,20180530,12:07,Tank_10,Ambient,25.39,-55.7,32,Test,20180530,20180530,12:08,Tank_11,Ambient,25.39,-55.4,32,Test,20180530,20180530,12:08,Tank_12,Ambient,25.35,-56.5,32,Test,20180530,20180530,12:09,Tank_13,Ambient,25.25,-56.2,32,Test,20180530,20180530,12:09,Tank_14,Ambient,25.21,-56,32,Test,20180530,20180530,12:10,Tank_15,Ambient,25.26,-56.6,32,Test,20180531,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet20180531,20180530,12:18,Conical_2,Low,26,-43.5,32,Test,20180531,20180530,12:18,Conical_5,Ambient,25.85,-57.6,32,Test,20180531,20180530,12:19,Conical_3,Low,26.01,-44.8,32,Test,20180531,20180530,12:20,Conical_6,Low,26.04,-49.5,32,Test,20180531,20180530,12:21,Conical_4,Ambient,25.96,-57.3,32,Test,20180531,20180530,12:22,Conical_9,Low,25.96,-44.2,32,Test,20180531,20180530,12:24,Conical_7,Ambient,25.98,-50.9,32,Test,20180531,20180530,12:24,Conical_8,Ambient,25.87,-46,32,Test,20180531,20180530,12:25,Amb_Header,Ambient,26.19,-47.4,32,Test,20180531,20180530,12:25,Low_Header,Low,26.09,-57.1,32,Test,20180531,20180530,12:28,XLow_Header,XLow,25.32,-57.5,32,Test,20180531,20180530,12:28,Tank_10,Ambient,25.15,-56.7,32,Test,20180531,20180530,12:29,Tank_11,Ambient,25.15,-56.6,32,Test,20180531,20180530,12:30,Tank_12,Ambient,25.06,-56.7,32,Test,20180531,20180530,12:30,Tank_13,Ambient,24.97,-57.2,32,Test,20180531,20180530,12:31,Tank_14,Ambient,24.92,-57.2,32,Test,20180531,20180530,12:31,Tank_15,Ambient,25.91,-57.1,32,Test,20180601,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet20180601,20180530,11:17,Tank_10,Ambient,25.31,-56.8,32,Test,20180601,20180530,11:19,XLow_Header,XLow,26.59,-28.2,32,Test,20180601,20180530,11:20,Tank_15,Ambient,26.07,-55.6,32,Test,20180601,20180530,11:22,Tank_13,Ambient,25.07,-55.6,32,Test,20180601,20180530,11:23,Tank_14,Ambient,25.12,-57.3,32,Test,20180601,20180530,11:24,Tank_11,Ambient,25.21,-57.1,32,Test,20180601,20180530,11:25,Tank_12,Ambient,25.17,-57.4,32,Test,20180601,20180530,11:26,Low_Header,Low,26.43,-49.2,32,Test,20180601,20180530,11:27,Amb_Header,Ambient,26.31,-56.1,32,Test,20180601,20180530,11:28,Conical_3,Low,26.29,-46.7,32,Test,20180601,20180530,11:29,Conical_2,Low,26.18,-46.6,32,Test,20180601,20180530,11:30,Conical_6,Low,26.32,-46.2,32,Test,20180601,20180530,11:31,Conical_5,Ambient,26.2,-55.1,32,Test,20180601,20180530,11:32,Conical_4,Ambient,26.05,-55.1,32,Test,20180601,20180530,11:33,Conical_9,Low,26.26,-46.2,32,Test,20180601,20180530,11:34,Conical_7,Ambient,26.17,-54.4,32,Test,20180601,20180530,11:35,Conical_8,Ambient,26.09,-54.3,32,Test,20180602,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet20180602,20180530,11:02,Amb_Header,Ambient,26.45,-55.8,32,Test,20180602,20180530,11:03,Low_Header,Low,26.58,-41.2,32,Test,20180602,20180530,11:05,XLow_Header,XLow,26.81,-23.2,32,Test,20180602,20180530,11:07,Conical_2,Ambient,26.39,-55.9,32,Test,20180602,20180530,11:08,Conical_6,Low,26.57,-35.7,32,Test,20180602,20180530,11:08,Conical_3,Low,26.56,-35.5,32,Test,20180602,20180530,11:10,Conical_9,XLow,26.81,-20.9,32,Test,20180602,20180530,11:12,Conical_5,Ambient,26.51,-55.9,32,Test,20180602,20180530,11:13,Conical_1,XLow,26.67,-21.2,32,Test,20180602,20180530,11:13,Conical_8,Low,26.55,-34.1,32,Test,20180602,20180530,11:15,Conical_7,XLow,26.49,-20.1,32,Test,20180602,20180530,11:16,Conical_4,Ambient,26.52,-55.6,32,Test,20180602,20180530,11:17,Tank_14,Ambient,25.28,-57.1,32,Test,20180602,20180530,11:18,Tank_12,Ambient,25.47,-57.2,32,Test,20180602,20180530,11:19,Tank_10,Ambient,25.44,-57.1,32,Test,20180602,20180530,11:20,Tank_11,Ambient,25.68,-57.4,32,Test,20180602,20180530,11:20,Tank_13,Ambient,25.3,-57.9,32,Test,20180602,20180530,11:21,Tank_15,Ambient,26.24,-56.1,32,Test,20180603,20180530,10:06,Low_Header,Low,26.58,-40.5,32,Test,20180603,20180530,10:07,Amb_Header,Ambient,26.45,-54.6,32,Test,20180603,20180530,10:08,Conical_5,Ambient,26.33,-54.8,32,Test,20180603,20180530,10:09,Conical_3,Low,26.47,-35.1,32,Test,20180603,20180530,10:10,Conical_1,XLow,26.55,-18,32,Test,20180603,20180530,10:11,Conical_4,Ambient,26.32,-54.4,32,Test,20180603,20180530,10:13,Conical_9,XLow,26.53,-16.7,32,Test,20180603,20180530,10:13,Conical_2,Ambient,26.37,-54.3,32,Test,20180603,20180530,10:14,Conical_6,Low,26.5,-34.4,32,Test,20180603,20180530,10:16,Conical_7,XLow,26.37,-15.8,32,Test,20180603,20180530,10:17,Conical_8,Low,26.51,-34,32,Test,20180603,20180530,10:18,XLow_Header,XLow,26.89,-17.7,32,Test,20180603,20180530,10:19,Tank_11,Ambient,25.53,-56.7,32,Test,20180603,20180530,10:19,Tank_14,Ambient,25.5,-56.7,32,Test,20180603,20180530,10:20,Tank_15,Ambient,26.25,-54.7,32,Test,20180603,20180530,10:21,Tank_13,Ambient,25.52,-57.2,32,Test,20180603,20180530,10:21,Tank_10,Ambient,25.69,-56.8,32,Test,20180603,20180530,10:21,Tank_12,Ambient,25.41,-57,32,Test,20180603,20180603,15:24,Low_Header,Low,27.07,-43.7,31.9,Test,salinity measured with Gates Lab Meter20180603,20180603,15:31,Amb_Header,Ambient,27.12,-56.5,31.2,Test,salinity measured with Gates Lab Meter20180603,20180603,15:20,XLow_Header,XLow,26.92,-32.6,30.8,Test,salinity measured with Gates Lab Meter20180603,20180603,15:32,Conical_1,XLow,27.16,-18.3,31.8,Test,salinity measured with Gates Lab Meter20180603,20180603,15:20,Conical_2,Ambient,27.25,-56.3,32.1,Test,salinity measured with Gates Lab Meter20180603,20180603,15:21,Conical_3,Low,27.16,-39.1,31.9,Test,salinity measured with Gates Lab Meter20180603,20180603,15:25,Conical_4,Ambient,27.22,-56.2,32,Test,salinity measured with Gates Lab Meter20180603,20180603,15:27,Conical_5,Ambient,27.24,-56.6,31.8,Test,salinity measured with Gates Lab Meter20180603,20180603,15:23,Conical_6,Low,27.16,-18.9,31.8,Test,salinity measured with Gates Lab Meter20180603,20180603,15:38,Conical_7,XLow,27.07,-16.8,31.4,Test,salinity measured with Gates Lab Meter20180603,20180603,15:33,Conical_8,Low,27.19,-38.2,32,Test,salinity measured with Gates Lab Meter20180603,20180603,15:29,Conical_9,XLow,27.11,-17.5,31.6,Test,salinity measured with Gates Lab Meter20180603,20180603,15:26,Tank_10,Ambient,26.04,-56.7,31.1,Test,salinity measured with Gates Lab Meter20180603,20180603,15:34,Tank_11,Ambient,25.89,-56.6,30.2,Test,salinity measured with Gates Lab Meter20180603,20180603,15:29,Tank_12,Ambient,26.14,-56.6,31.5,Test,salinity measured with Gates Lab Meter20180603,20180603,15:30,Tank_13,Ambient,25.87,-56.9,31.2,Test,salinity measured with Gates Lab Meter20180603,20180603,15:35,Tank_14,Ambient,26.13,-56.6,31.4,Test,salinity measured with Gates Lab Meter20180603,20180603,15:37,Tank_15,Ambient,26.72,-56.1,31.3,Test,salinity measured with Gates Lab Meter20180604,20180604,10:57,Low_Header,Low,26.47,-38.7,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:51,Amb_Header,Ambient,26.51,-51,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:57,XLow_Header,XLow,26.37,-15.6,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:16,Conical_1,XLow,26.24,0.8,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:13,Conical_2,Ambient,26.19,-49.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:11,Conical_3,Low,26.32,-30,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:05,Conical_4,Ambient,26.31,-48.4,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:15,Conical_5,Ambient,26.19,-49.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:10,Conical_6,Low,26.32,-30,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:07,Conical_7,XLow,26.17,0.9,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:46,Conical_8,Low,26.38,-30.8,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:03,Conical_9,XLow,26.29,-0.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:55,Tank_10,Ambient,25.85,-56.6,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,11:01,Tank_11,Ambient,25.78,-56.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:59,Tank_12,Ambient,25.68,-55.7,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:52,Tank_13,Ambient,25.66,-56.5,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:54,Tank_14,Ambient,25.64,-56.2,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,10:53,Tank_15,Ambient,26.19,-55.2,32,Test,salinity estimated 5-30 - 6-3 and morning 6-420180604,20180604,13:38,Low_Header,Low,26.64,-31.6,32.2,Test,salinity measured with Gates Lab Meter20180604,20180604,13:39,Amb_Header,Ambient,26.68,-52.8,32.4,Test,salinity measured with Gates Lab Meter20180604,20180604,13:41,XLow_Header,XLow,26.57,-5.3,32.2,Test,salinity measured with Gates Lab Meter20180604,20180604,13:35,Conical_1,XLow,26,2.1,32.1,Test,salinity measured with Gates Lab Meter20180604,20180604,13:21,Conical_2,Ambient,26.45,-48,31.6,Test,salinity measured with Gates Lab Meter20180604,20180604,13:29,Conical_3,Low,26.56,-31.7,32,Test,salinity measured with Gates Lab Meter20180604,20180604,13:23,Conical_4,Ambient,26.47,-49.9,31.7,Test,salinity measured with Gates Lab Meter20180604,20180604,13:30,Conical_5,Ambient,26.42,-50.2,32.1,Test,salinity measured with Gates Lab Meter20180604,20180604,13:32,Conical_6,Low,26.56,-32.3,32.2,Test,salinity measured with Gates Lab Meter20180604,20180604,13:37,Conical_7,XLow,26.46,7.1,32.2,Test,salinity measured with Gates Lab Meter20180604,20180604,13:35,Conical_8,Low,26.56,-32.6,32.5,Test,salinity measured with Gates Lab Meter20180604,20180604,13:27,Conical_9,XLow,26.49,0,31.8,Test,salinity measured with Gates Lab Meter
+Date,Calib.Date,Time,Sample.ID,Treatment,Temperature,pH.MV,Salinity,Period1,Notes
+20180529,20180530,16:20,Low_Header,Low,27.65,-44.5,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180529,20180530,16:21,Amb_Header,Ambient,27.25,-56.4,32,Test,
+20180529,20180530,16:22,Conical_2,Low,27.2,-47,32,Test,
+20180529,20180530,16:23,Conical_3,Low,27.29,-46.6,32,Test,
+20180529,20180530,16:25,Conical_4,Ambient,27.03,-56.9,32,Test,
+20180529,20180530,16:24,Conical_5,Ambient,26.93,-56.6,32,Test,
+20180529,20180530,16:22,Conical_6,Low,27.32,-46.4,32,Test,
+20180529,20180530,16:28,Conical_7,Ambient,27,-57,32,Test,
+20180529,20180530,16:27,Conical_8,Ambient,27.01,-56.9,32,Test,
+20180529,20180530,16:26,Conical_9,Low,27.21,-47.3,32,Test,
+20180529,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet
+20180530,20180530,9:21,Low_Header,Low,25.94,-48.5,32,Test,
+20180530,20180530,9:24,Amb_Header,Ambient,25.7,-55.5,32,Test,
+20180530,20180530,NA,Conical_1,NA,NA,NA,32,Test,No water running in this yet
+20180530,20180530,9:23,Conical_2,Low,25.71,-47.9,32,Test,
+20180530,20180530,9:25,Conical_3,Low,25.71,-48,32,Test,
+20180530,20180530,9:27,Conical_4,Ambient,25.5,-55.7,32,Test,
+20180530,20180530,9:28,Conical_5,Ambient,25.52,-55.6,32,Test,
+20180530,20180530,9:29,Conical_6,Low,25.75,-47.9,32,Test,
+20180530,20180530,9:30,Conical_7,Ambient,25.54,-55.6,32,Test,
+20180530,20180530,9:31,Conical_8,Ambient,25.43,-55.7,32,Test,
+20180530,20180530,9:32,Conical_9,Low,25.73,-48.2,32,Test,
+20180530,20180530,9:33,Tank_10,Ambient,25.29,-55.3,32,Test,
+20180530,20180530,9:34,Tank_11,Ambient,25.32,-55.2,32,Test,
+20180530,20180530,9:35,Tank_12,Ambient,25.22,-55.2,32,Test,
+20180530,20180530,9:36,Tank_13,Ambient,25.13,-55.8,32,Test,
+20180530,20180530,9:37,Tank_14,Ambient,25.08,-55.7,32,Test,
+20180530,20180530,9:38,Tank_15,Ambient,25.57,-55.7,32,Test,
+20180530,20180530,11:59,Low_Header,Low,26.47,-42.3,32,Test,
+20180530,20180530,12:00,Conical_2,Low,26.34,-46.5,32,Test,
+20180530,20180530,12:01,Conical_3,Low,26.35,-46.2,32,Test,
+20180530,20180530,12:02,Conical_6,Low,26.32,-46.2,32,Test,
+20180530,20180530,12:03,Conical_9,Low,26.3,-47.4,32,Test,
+20180530,20180530,11:59,Amb_Header,Ambient,26.06,-56,32,Test,
+20180530,20180530,12:05,Conical_4,Ambient,26.15,-56.8,32,Test,
+20180530,20180530,12:04,Conical_5,Ambient,26.1,-56.5,32,Test,
+20180530,20180530,12:06,Conical_7,Ambient,26.1,-56.9,32,Test,
+20180530,20180530,12:07,Conical_8,Ambient,26.05,-55.7,32,Test,
+20180530,20180530,12:07,Tank_10,Ambient,25.39,-55.7,32,Test,
+20180530,20180530,12:08,Tank_11,Ambient,25.39,-55.4,32,Test,
+20180530,20180530,12:08,Tank_12,Ambient,25.35,-56.5,32,Test,
+20180530,20180530,12:09,Tank_13,Ambient,25.25,-56.2,32,Test,
+20180530,20180530,12:09,Tank_14,Ambient,25.21,-56,32,Test,
+20180530,20180530,12:10,Tank_15,Ambient,25.26,-56.6,32,Test,
+20180531,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet
+20180531,20180530,12:18,Conical_2,Low,26,-43.5,32,Test,
+20180531,20180530,12:18,Conical_5,Ambient,25.85,-57.6,32,Test,
+20180531,20180530,12:19,Conical_3,Low,26.01,-44.8,32,Test,
+20180531,20180530,12:20,Conical_6,Low,26.04,-49.5,32,Test,
+20180531,20180530,12:21,Conical_4,Ambient,25.96,-57.3,32,Test,
+20180531,20180530,12:22,Conical_9,Low,25.96,-44.2,32,Test,
+20180531,20180530,12:24,Conical_7,Ambient,25.98,-50.9,32,Test,
+20180531,20180530,12:24,Conical_8,Ambient,25.87,-46,32,Test,
+20180531,20180530,12:25,Amb_Header,Ambient,26.19,-47.4,32,Test,
+20180531,20180530,12:25,Low_Header,Low,26.09,-57.1,32,Test,
+20180531,20180530,12:28,XLow_Header,XLow,25.32,-57.5,32,Test,
+20180531,20180530,12:28,Tank_10,Ambient,25.15,-56.7,32,Test,
+20180531,20180530,12:29,Tank_11,Ambient,25.15,-56.6,32,Test,
+20180531,20180530,12:30,Tank_12,Ambient,25.06,-56.7,32,Test,
+20180531,20180530,12:30,Tank_13,Ambient,24.97,-57.2,32,Test,
+20180531,20180530,12:31,Tank_14,Ambient,24.92,-57.2,32,Test,
+20180531,20180530,12:31,Tank_15,Ambient,25.91,-57.1,32,Test,
+20180601,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet
+20180601,20180530,11:17,Tank_10,Ambient,25.31,-56.8,32,Test,
+20180601,20180530,11:19,XLow_Header,XLow,26.59,-28.2,32,Test,
+20180601,20180530,11:20,Tank_15,Ambient,26.07,-55.6,32,Test,
+20180601,20180530,11:22,Tank_13,Ambient,25.07,-55.6,32,Test,
+20180601,20180530,11:23,Tank_14,Ambient,25.12,-57.3,32,Test,
+20180601,20180530,11:24,Tank_11,Ambient,25.21,-57.1,32,Test,
+20180601,20180530,11:25,Tank_12,Ambient,25.17,-57.4,32,Test,
+20180601,20180530,11:26,Low_Header,Low,26.43,-49.2,32,Test,
+20180601,20180530,11:27,Amb_Header,Ambient,26.31,-56.1,32,Test,
+20180601,20180530,11:28,Conical_3,Low,26.29,-46.7,32,Test,
+20180601,20180530,11:29,Conical_2,Low,26.18,-46.6,32,Test,
+20180601,20180530,11:30,Conical_6,Low,26.32,-46.2,32,Test,
+20180601,20180530,11:31,Conical_5,Ambient,26.2,-55.1,32,Test,
+20180601,20180530,11:32,Conical_4,Ambient,26.05,-55.1,32,Test,
+20180601,20180530,11:33,Conical_9,Low,26.26,-46.2,32,Test,
+20180601,20180530,11:34,Conical_7,Ambient,26.17,-54.4,32,Test,
+20180601,20180530,11:35,Conical_8,Ambient,26.09,-54.3,32,Test,
+20180602,20180530,NA,Conical_1,NA,NA,NA,NA,Test,No water running in this yet
+20180602,20180530,11:02,Amb_Header,Ambient,26.45,-55.8,32,Test,
+20180602,20180530,11:03,Low_Header,Low,26.58,-41.2,32,Test,
+20180602,20180530,11:05,XLow_Header,XLow,26.81,-23.2,32,Test,
+20180602,20180530,11:07,Conical_2,Ambient,26.39,-55.9,32,Test,
+20180602,20180530,11:08,Conical_6,Low,26.57,-35.7,32,Test,
+20180602,20180530,11:08,Conical_3,Low,26.56,-35.5,32,Test,
+20180602,20180530,11:10,Conical_9,XLow,26.81,-20.9,32,Test,
+20180602,20180530,11:12,Conical_5,Ambient,26.51,-55.9,32,Test,
+20180602,20180530,11:13,Conical_1,XLow,26.67,-21.2,32,Test,
+20180602,20180530,11:13,Conical_8,Low,26.55,-34.1,32,Test,
+20180602,20180530,11:15,Conical_7,XLow,26.49,-20.1,32,Test,
+20180602,20180530,11:16,Conical_4,Ambient,26.52,-55.6,32,Test,
+20180602,20180530,11:17,Tank_14,Ambient,25.28,-57.1,32,Test,
+20180602,20180530,11:18,Tank_12,Ambient,25.47,-57.2,32,Test,
+20180602,20180530,11:19,Tank_10,Ambient,25.44,-57.1,32,Test,
+20180602,20180530,11:20,Tank_11,Ambient,25.68,-57.4,32,Test,
+20180602,20180530,11:20,Tank_13,Ambient,25.3,-57.9,32,Test,
+20180602,20180530,11:21,Tank_15,Ambient,26.24,-56.1,32,Test,
+20180603,20180530,10:06,Low_Header,Low,26.58,-40.5,32,Test,
+20180603,20180530,10:07,Amb_Header,Ambient,26.45,-54.6,32,Test,
+20180603,20180530,10:08,Conical_5,Ambient,26.33,-54.8,32,Test,
+20180603,20180530,10:09,Conical_3,Low,26.47,-35.1,32,Test,
+20180603,20180530,10:10,Conical_1,XLow,26.55,-18,32,Test,
+20180603,20180530,10:11,Conical_4,Ambient,26.32,-54.4,32,Test,
+20180603,20180530,10:13,Conical_9,XLow,26.53,-16.7,32,Test,
+20180603,20180530,10:13,Conical_2,Ambient,26.37,-54.3,32,Test,
+20180603,20180530,10:14,Conical_6,Low,26.5,-34.4,32,Test,
+20180603,20180530,10:16,Conical_7,XLow,26.37,-15.8,32,Test,
+20180603,20180530,10:17,Conical_8,Low,26.51,-34,32,Test,
+20180603,20180530,10:18,XLow_Header,XLow,26.89,-17.7,32,Test,
+20180603,20180530,10:19,Tank_11,Ambient,25.53,-56.7,32,Test,
+20180603,20180530,10:19,Tank_14,Ambient,25.5,-56.7,32,Test,
+20180603,20180530,10:20,Tank_15,Ambient,26.25,-54.7,32,Test,
+20180603,20180530,10:21,Tank_13,Ambient,25.52,-57.2,32,Test,
+20180603,20180530,10:21,Tank_10,Ambient,25.69,-56.8,32,Test,
+20180603,20180530,10:21,Tank_12,Ambient,25.41,-57,32,Test,
+20180603,20180603,15:24,Low_Header,Low,27.07,-43.7,31.9,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:31,Amb_Header,Ambient,27.12,-56.5,31.2,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:20,XLow_Header,XLow,26.92,-32.6,30.8,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:32,Conical_1,XLow,27.16,-18.3,31.8,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:20,Conical_2,Ambient,27.25,-56.3,32.1,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:21,Conical_3,Low,27.16,-39.1,31.9,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:25,Conical_4,Ambient,27.22,-56.2,32,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:27,Conical_5,Ambient,27.24,-56.6,31.8,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:23,Conical_6,Low,27.16,-18.9,31.8,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:38,Conical_7,XLow,27.07,-16.8,31.4,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:33,Conical_8,Low,27.19,-38.2,32,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:29,Conical_9,XLow,27.11,-17.5,31.6,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:26,Tank_10,Ambient,26.04,-56.7,31.1,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:34,Tank_11,Ambient,25.89,-56.6,30.2,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:29,Tank_12,Ambient,26.14,-56.6,31.5,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:30,Tank_13,Ambient,25.87,-56.9,31.2,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:35,Tank_14,Ambient,26.13,-56.6,31.4,Test,salinity measured with Gates Lab Meter
+20180603,20180603,15:37,Tank_15,Ambient,26.72,-56.1,31.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,10:57,Low_Header,Low,26.47,-38.7,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:51,Amb_Header,Ambient,26.51,-51,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:57,XLow_Header,XLow,26.37,-15.6,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:16,Conical_1,XLow,26.24,0.8,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:13,Conical_2,Ambient,26.19,-49.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:11,Conical_3,Low,26.32,-30,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:05,Conical_4,Ambient,26.31,-48.4,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:15,Conical_5,Ambient,26.19,-49.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:10,Conical_6,Low,26.32,-30,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:07,Conical_7,XLow,26.17,0.9,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:46,Conical_8,Low,26.38,-30.8,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:03,Conical_9,XLow,26.29,-0.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:55,Tank_10,Ambient,25.85,-56.6,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,11:01,Tank_11,Ambient,25.78,-56.3,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:59,Tank_12,Ambient,25.68,-55.7,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:52,Tank_13,Ambient,25.66,-56.5,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:54,Tank_14,Ambient,25.64,-56.2,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,10:53,Tank_15,Ambient,26.19,-55.2,32,Test,salinity estimated 5-30 - 6-3 and morning 6-4
+20180604,20180604,13:38,Low_Header,Low,26.64,-31.6,32.2,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:39,Amb_Header,Ambient,26.68,-52.8,32.4,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:41,XLow_Header,XLow,26.57,-5.3,32.2,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:35,Conical_1,XLow,26,2.1,32.1,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:21,Conical_2,Ambient,26.45,-48,31.6,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:29,Conical_3,Low,26.56,-31.7,32,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:23,Conical_4,Ambient,26.47,-49.9,31.7,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:30,Conical_5,Ambient,26.42,-50.2,32.1,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:32,Conical_6,Low,26.56,-32.3,32.2,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:37,Conical_7,XLow,26.46,7.1,32.2,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:35,Conical_8,Low,26.56,-32.6,32.5,Test,salinity measured with Gates Lab Meter
+20180604,20180604,13:27,Conical_9,XLow,26.49,0,31.8,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:32,Low_Header,Low,26.52,-39.1,32.4,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:36,Amb_Header,Ambient,26.59,-52.5,32.4,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:41,XLow_Header,XLow,26.46,-5.7,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:28,Conical_1,XLow,26.33,2.3,32.2,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:37,Conical_2,Ambient,26.38,-51.8,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:34,Conical_3,Low,26.41,-31.6,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:33,Conical_4,Ambient,26.4,-51.2,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:29,Conical_5,Ambient,26.38,-50.2,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:38,Conical_6,Low,26.43,-31.4,32.4,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:30,Conical_7,XLow,26.35,7.5,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:35,Conical_8,Low,26.41,-30.9,32.3,Test,salinity measured with Gates Lab Meter
+20180604,20180604,15:39,Conical_9,XLow,26.35,9.2,32.3,Test,salinity measured with Gates Lab Meter
