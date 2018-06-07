@@ -212,3 +212,12 @@ Date,Calib.Date,Time,Sample.ID,Treatment,Temperature,pH.MV,Salinity,Period1,Note
 20180606,20180606,12:33,Tank_13,Ambient,25.05,-55.7,NA,Test,Old meter +Mettler Toledo
 20180606,20180606,12:35,Tank_14,XLow,24.98,-30,NA,Test,Old meter +Mettler Toledo
 20180606,20180606,11:55,Tank_15,Low,24.19,-33,NA,Test,Old meter +Mettler Toledo
+20180607,20180607,12:32,Low_Header,Low,26.63,-37.1,34,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:37,XLow_Header,XLow,26.54,-11.6,34.06,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:33,Amb_Header,Ambient,26.62,-53.4,34.02,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:39,Tank_10,Ambient,25.26,-49.4,33.98,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:35,Tank_11,XLow,25.1,-27.3,33.49,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:46,Tank_12,Low,25.15,-32.2,34.03,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:42,Tank_13,Ambient,24.88,-54.8,34.03,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:42,Tank_14,XLow,24.86,-31.9,33.96,Poc 1,New meter + Mettler Toledo
+20180607,20180607,12:44,Tank_15,Low,24.62,-37.2,34.2,Poc 1,New meter + Mettler Toledo
