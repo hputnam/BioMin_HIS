@@ -176,3 +176,39 @@ Date,Calib.Date,Time,Sample.ID,Treatment,Temperature,pH.MV,Salinity,Period1,Note
 20180604,20180604,15:30,Conical_7,XLow,26.35,7.5,32.3,Test,salinity measured with Gates Lab Meter
 20180604,20180604,15:35,Conical_8,Low,26.41,-30.9,32.3,Test,salinity measured with Gates Lab Meter
 20180604,20180604,15:39,Conical_9,XLow,26.35,9.2,32.3,Test,salinity measured with Gates Lab Meter
+20180606,20180606,12:30,Low_Header,Low,26.4,-44.6,34.03,Test,New meter +Thermo probe
+20180606,20180606,11:49,Amb_Header,Ambient,26.3,-57.5,34.01,Test,New meter +Thermo probe
+20180606,20180606,11:45,XLow_Header,XLow,26.2,-15.2,34.05,Test,New meter +Thermo probe
+20180606,20180606,11:46,Conical_1,XLow,25.8,-5.6,34.02,Test,New meter +Thermo probe
+20180606,20180606,12:37,Conical_2,Ambient,26.7,-54.5,34.01,Test,New meter +Thermo probe
+20180606,20180606,12:31,Conical_3,Low,26.4,-37.6,34.08,Test,New meter +Thermo probe
+20180606,20180606,12:38,Conical_4,Ambient,26.7,-54.8,34.02,Test,New meter +Thermo probe
+20180606,20180606,11:48,Conical_5,Ambient,25.7,-53.4,34.04,Test,New meter +Thermo probe
+20180606,20180606,11:54,Conical_6,Low,26,-36.1,34.03,Test,New meter +Thermo probe
+20180606,20180606,11:52,Conical_7,XLow,25.8,-1.8,34.01,Test,New meter +Thermo probe
+20180606,20180606,12:39,Conical_8,Low,26.8,-37.6,34.09,Test,New meter +Thermo probe
+20180606,20180606,12:32,Conical_9,XLow,26.5,-3.4,33.98,Test,New meter +Thermo probe
+20180606,20180606,12:34,Tank_10,Ambient,26.6,-53.3,34.36,Test,New meter +Thermo probe
+20180606,20180606,12:29,Tank_11,XLow,26.2,-28.2,33.96,Test,New meter +Thermo probe
+20180606,20180606,11:51,Tank_12,Low,25.1,-33.1,33.9,Test,New meter +Thermo probe
+20180606,20180606,12:33,Tank_13,Ambient,26.6,-59.5,33.96,Test,New meter +Thermo probe
+20180606,20180606,12:35,Tank_14,XLow,26.7,-33.9,33.98,Test,New meter +Thermo probe
+20180606,20180606,11:55,Tank_15,Low,24.3,-37,33.88,Test,New meter +Thermo probe
+20180606,20180606,12:30,Low_Header,Low,26.35,-40.6,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:49,Amb_Header,Ambient,26.35,-53.5,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:45,XLow_Header,XLow,26.23,-14.3,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:46,Conical_1,XLow,25.79,-4.8,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:37,Conical_2,Ambient,25.86,-50.4,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:31,Conical_3,Low,26.07,-33.8,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:38,Conical_4,Ambient,26.06,-50.8,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:48,Conical_5,Ambient,25.83,-49.6,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:54,Conical_6,Low,25.98,-32.3,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:52,Conical_7,XLow,25.84,0.5,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:39,Conical_8,Low,26.05,-33.6,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:32,Conical_9,XLow,25.95,0.1,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:34,Tank_10,Ambient,25.33,-49.5,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:29,Tank_11,XLow,25.18,-24.8,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:51,Tank_12,Low,25.11,-29.4,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:33,Tank_13,Ambient,25.05,-55.7,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,12:35,Tank_14,XLow,24.98,-30,NA,Test,Old meter +Mettler Toledo
+20180606,20180606,11:55,Tank_15,Low,24.19,-33,NA,Test,Old meter +Mettler Toledo
