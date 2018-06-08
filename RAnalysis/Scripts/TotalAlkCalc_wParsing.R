@@ -23,12 +23,12 @@ library(seacarb) #used to calculate TA
 library(tidyverse)
 
 #CHANGE THESE VALUES EVERY DAY----------------------------------------------
-path<-"Data/20180602" #the location of all your titration files
-massfile<-"20180602massall.csv" # name of your file with masses
-titrationfile<-'20180602_CRM.csv'# name of the last titration file run
+path<-"Data/20180607" #the location of all your titration files
+massfile<-"20180607mass_Run1.csv" # name of your file with masses
+titrationfile<-'20180607_Run1.csv'# name of the last titration file run
 
 # Date that the data were run
-date<-'20180602'
+date<-'20180607'
 
 
 #DO NOT CHANGE ANYTHING BELOW THIS LINE UNLESS A NEW BOTTLE OF ACID IS USED
@@ -60,9 +60,9 @@ pH3<-mod.pH$coefficients[1]+mod.pH$coefficients[2]*3
 ##### titration###########
 #create an empty matrix to put the TA values in
 nrows<-nrow(Mass) # number of rows in a mass file
-TA <- data.frame(matrix(nrow = nrows, ncol = 3))
+TA <- data.frame(matrix(nrow = nrows, ncol = 5))
 rownames(TA)<-Mass$Sample.ID1[1:nrows]
-colnames(TA)<-c("SampleID",'TA','Mass')
+colnames(TA)<-c("Sample.ID",'TA','Mass', "Tank", "Type")
 
 #run a for loop to bring in the titration files one at a time and calculate TA
 # read in the mega concatenated titration results file
@@ -74,7 +74,7 @@ sample_name_positions <- c(1,grep("^0", AllData[,1]), nrow(AllData))
 sample_name_positions <- sample_name_positions[-1] #remove first report of duplicated 1
 
 ## parse through all the data in the one file ###
-sample_names<-Mass$sample
+sample_names<-Mass$Sample.ID
 # create a list with all the sample IDs
 sample_names_list <- list()
 for (item in 1:length(sample_names)){
@@ -117,11 +117,13 @@ for(i in 1:nrows) {
   #------------------------------------------------------------------------------
   
   #Salinity of your samples
-  s<-Mass[Mass$sample==name,3]
+  s<-Mass[Mass$Sample.ID==name,3]
   #s<-Mass[name,2]
   #mass of sample in g: changed with every sample
   #mass<-Mass[name,1]
-  mass<-Mass[Mass$sample==name,2]
+  mass<-Mass[Mass$Sample.ID==name,2]
+  sample.id<-Mass[Mass$Sample.ID==name,4]
+  sample.type<-Mass[Mass$Sample.ID==name,5]
   #sample.index<-Mass[Mass$Sample.ID1==name,3]# this is the order that the sample was run
   #-------------------------------------------------------------------
   #Calculate TA
@@ -130,10 +132,15 @@ for(i in 1:nrows) {
   TA[i,1]<-name
   TA[i,2]<-1000000*at(S=s,T=mean(Data$Temperature[mV], na.rm=T), C=c, d=d, pHTris=NULL, ETris=NULL, weight=mass, E=Data$mV[mV], volume=Data$Volume[mV])
   TA[i,3]<-mass
-  #TA[i,4]<-sample.index
+  TA[i,4]<-sample.id
+  TA[i,5]<-sample.type
 }
 TA[,2:3]<-sapply(TA[,2:3], as.numeric) # make sure the appropriate columns are numeric
 #exports your data as a CSV file
 write.table(TA,paste0(path,"/",date,"_TA_Output",".csv"),sep=",", row.names=FALSE)
 
+cumu.data <- read.csv("Data/Cumulative_TA_Output.csv", header=TRUE, sep=",")
+update.data <- rbind(cumu.data, TA)
+
+write.table(update.data,"Data/Cumulative_TA_Output.csv",sep=",", row.names=FALSE)
 

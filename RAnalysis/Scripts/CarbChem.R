@@ -91,8 +91,7 @@ plot(SW.chem$Sample.ID, SW.chem$Salinity, xlab="Tank", ylab="Salinity psu", ylim
 dev.off()
 
 ##### DISCRETE TA CALCULATIONS #####
-TA <- read.csv("TA.csv", header=TRUE, sep=",", na.strings="NA")  #read in  TA results
-
+TA <- read.csv("Cumulative_TA_Output.csv", header=TRUE, sep=",", na.strings="NA")  #read in  TA results
 
 ##### SEAWATER CHEMISTRY ANALYSIS FOR DISCRETE MEASUREMENTS#####
 #Seawater chemistry table from simultaneous TA, pH, temperature and salinity measurements
@@ -126,7 +125,7 @@ plot(carb.output$Treatment, carb.output$Temperature, xlab="Treatment", ylab="Tem
 plot(carb.output$Treatment, carb.output$pH, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
 plot(carb.output$Treatment, carb.output$pCO2, xlab="Treatment", ylab="pCO2 µmol kg-1", ylim=c(350,2500))
 plot(carb.output$Treatment, carb.output$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,35))
-plot(carb.output$Treatment, carb.output$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2400))
+plot(carb.output$Treatment, carb.output$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2250))
 plot(carb.output$Treatment, carb.output$Aragonite.Sat, xlab="Treatment", ylab="Aragonite Saturation State", ylim=c(0,4))
 dev.off()
 
