@@ -24,8 +24,8 @@ library(tidyverse)
 
 #CHANGE THESE VALUES EVERY DAY----------------------------------------------
 path<-"Data/20180608" #the location of all your titration files
-massfile<-"20180608mass_Run1.csv" # name of your file with masses
-titrationfile<-'20180608_Run1.csv'# name of the last titration file run
+massfile<-"20180608mass_Run2.csv" # name of your file with masses
+titrationfile<-'20180608_Run2.csv'# name of the last titration file run
 
 # Date that the data were run
 date<-'20180608'
@@ -74,7 +74,7 @@ sample_name_positions <- c(1,grep("^0", AllData[,1]), nrow(AllData))
 sample_name_positions <- sample_name_positions[-1] #remove first report of duplicated 1
 
 ## parse through all the data in the one file ###
-sample_names<-Mass$Sample.ID
+sample_names<-Mass$sample
 # create a list with all the sample IDs
 sample_names_list <- list()
 for (item in 1:length(sample_names)){
@@ -117,18 +117,18 @@ for(i in 1:nrows) {
   #------------------------------------------------------------------------------
   
   #Salinity of your samples
-  s<-Mass[Mass$Sample.ID==name,3]
+  s<-Mass[Mass$sample==name,3]
   #s<-Mass[name,2]
   #mass of sample in g: changed with every sample
   #mass<-Mass[name,1]
-  mass<-Mass[Mass$Sample.ID==name,2]
-  sample.id<-Mass[Mass$Sample.ID==name,4]
-  sample.type<-Mass[Mass$Sample.ID==name,5]
+  mass<-Mass[Mass$sample==name,2]
+  sample.id<-Mass[Mass$sample==name,4]
+  sample.type<-Mass[Mass$sample==name,5]
   #sample.index<-Mass[Mass$Sample.ID1==name,3]# this is the order that the sample was run
   #-------------------------------------------------------------------
   #Calculate TA
   
-  #at function is based on code in saecarb package by Steeve Comeau, Heloise Lavigne and Jean-Pierre Gattuso
+  #at function is based on code in seacarb package by Steeve Comeau, Heloise Lavigne and Jean-Pierre Gattuso
   TA[i,1]<-name
   TA[i,2]<-1000000*at(S=s,T=mean(Data$Temperature[mV], na.rm=T), C=c, d=d, pHTris=NULL, ETris=NULL, weight=mass, E=Data$mV[mV], volume=Data$Volume[mV])
   TA[i,3]<-mass
