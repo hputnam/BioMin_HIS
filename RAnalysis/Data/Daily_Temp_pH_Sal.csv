@@ -273,7 +273,7 @@ Date,Calib.Date,Time,Sample.ID,Treatment,Type,Temperature,pH.MV,Salinity,Period1
 20180609,20180609,10:38,Tank11,XLow,Tank,25.59,-10.9,34.03,Poc1,New meter + Mettler Toledo; direct measurement
 20180609,20180609,10:38,Tank12,Low,Tank,26.45,-30.4,34.07,Poc1,New meter + Mettler Toledo; direct measurement
 20180609,20180609,10:38,Tank13,Ambient,Tank,26.53,-50.4,34.14,Poc1,New meter + Mettler Toledo; direct measurement
-20180609,20180609,10:38,Tank14,XLow,Tank,26.59,-10,-34.4,Poc1,New meter + Mettler Toledo; direct measurement
+20180609,20180609,10:38,Tank14,XLow,Tank,26.59,-10,34.4,Poc1,New meter + Mettler Toledo; direct measurement
 20180609,20180609,10:38,Tank15,Low,Tank,26.64,-34.4,34.09,Poc1,New meter + Mettler Toledo; direct measurement
 20180609,20180609,15:00,Bin10,Ambient,Bin,27.09,-49.6,33.97,Poc1,New meter + Mettler Toledo; bin measurement
 20180609,20180609,15:00,Bin11,XLow,Bin,26.99,-21.1,34.11,Poc1,New meter + Mettler Toledo; bin measurement
