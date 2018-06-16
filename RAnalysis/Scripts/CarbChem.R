@@ -78,16 +78,16 @@ SW.chem$Sample.ID <- factor(SW.chem$Sample.ID)
 
 pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Treatment_Measures_Poc1.pdf")
 par(mfrow=c(3,2))
-plot(SW.chem$Treatment, SW.chem$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,28))
+plot(SW.chem$Treatment, SW.chem$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,30))
 plot(SW.chem$Treatment, SW.chem$pH.Total, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
-plot(SW.chem$Treatment, SW.chem$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,35))
+plot(SW.chem$Treatment, SW.chem$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,37))
 dev.off()
 
 pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Tank_Measures_Poc1.pdf")
 par(mfrow=c(1,3))
-plot(SW.chem$Sample.ID, SW.chem$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(23,28),las=2)
+plot(SW.chem$Sample.ID, SW.chem$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(23,30),las=2)
 plot(SW.chem$Sample.ID, SW.chem$pH.Total, xlab="Tank", ylab="pH Total Scale", ylim=c(7.0,8.2),las=2)
-plot(SW.chem$Sample.ID, SW.chem$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(30,35),las=2)
+plot(SW.chem$Sample.ID, SW.chem$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(30,37),las=2)
 dev.off()
 
 ##### DISCRETE TA CALCULATIONS #####

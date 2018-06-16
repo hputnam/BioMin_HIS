@@ -479,30 +479,30 @@ Date,Calib.Date,Time,Sample.ID,Treatment,Type,Temperature,pH.MV,Salinity,Period1
 20180614,20180614,10:11,Tank13,Ambient,Tank,26.44,-52.4,34.21,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
 20180614,20180614,10:11,Tank14,XLow,Tank,26.54,-21.9,34.34,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
 20180614,20180614,10:11,Tank15,Low,Tank,26.48,-38.8,34.29,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
-20180615,20180615,9:50,Tank10,Ambient,Tank,26.67,-51.8,34.45,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank11,XLow,Tank,26.55,-19.7,34.27,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank12,Low,Tank,26.42,-38.8,34.56,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank13,Ambient,Tank,26.41,-51.9,34.25,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank14,XLow,Tank,26.44,-23.6,34.26,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank15,Low,Tank,26.39,-38.3,34.26,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank16,Low,Tank,27.21,-34.1,34.51,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank17,XLow,Tank,27.1,-16.7,34.46,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,9:50,Tank18,Ambient,Tank,27.2,-52.6,34.42,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank10,Ambient,Tank,27.35,-54.2,34.26,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank11,XLow,Tank,27.16,-20.1,34.3,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank12,Low,Tank,27.14,-38.8,34.46,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank13,Ambient,Tank,27.06,-52.2,34.24,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank14,XLow,Tank,27.1,-24.2,34.26,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank15,Low,Tank,27.24,-39.7,34.4,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank16,Low,Tank,28.09,-40.2,34.34,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank17,XLow,Tank,27.9,-23,33.56,Poc1,New meter + Mettler Toledo; direct measurement,
-20180615,20180615,14:45,Tank18,Ambient,Tank,27.95,-53.5,34.36,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Tank10,Ambient,Tank,26.62,-52.2,34.29,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Tank11,XLow,Tank,26.19,-21.7,34.25,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Tank12,Low,Tank,26.23,-39.2,34.27,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Tank13,Ambient,Tank,26.28,-52.5,34.25,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Tank14,XLow,Tank,26.17,-21.7,34.37,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Tank15,Low,Tank,26.21,-39,34.25,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Conical16,Low,Conical,27.15,-37.7,34.46,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Conical17,XLow,Conical,27.08,-19.9,34.26,Poc1,New meter + Mettler Toledo; direct measurement,
-20180616,20180616,10:30,Conical18,Ambient,Conical,27.17,-49.9,34.42,Poc1,New meter + Mettler Toledo; direct measurement,
+20180615,20180615,9:50,Tank10,Ambient,Tank,26.67,-51.8,34.45,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,9:50,Tank11,XLow,Tank,26.55,-19.7,34.27,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,9:50,Tank12,Low,Tank,26.42,-38.8,34.56,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,9:50,Tank13,Ambient,Tank,26.41,-51.9,34.25,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,9:50,Tank14,XLow,Tank,26.44,-23.6,34.26,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,9:50,Tank15,Low,Tank,26.39,-38.3,34.26,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,9:50,Conical16,Low,Tank,27.21,-34.1,34.51,Mon1,New meter + Mettler Toledo; direct measurement,
+20180615,20180615,9:50,Conical17,XLow,Tank,27.1,-16.7,34.46,Mon1,New meter + Mettler Toledo; direct measurement,
+20180615,20180615,9:50,Conical18,Ambient,Tank,27.2,-52.6,34.42,Mon1,New meter + Mettler Toledo; direct measurement,
+20180615,20180615,14:45,Tank10,Ambient,Tank,27.35,-54.2,34.26,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Tank11,XLow,Tank,27.16,-20.1,34.3,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Tank12,Low,Tank,27.14,-38.8,34.46,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Tank13,Ambient,Tank,27.06,-52.2,34.24,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Tank14,XLow,Tank,27.1,-24.2,34.26,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Tank15,Low,Tank,27.24,-39.7,34.4,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Conical16,Low,Tank,28.09,-40.2,34.34,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180615,20180615,14:45,Conical17,XLow,Tank,27.9,-23,33.56,Poc1,New meter + Mettler Toledo; direct measurement,
+20180615,20180615,14:45,Conical18,Ambient,Tank,27.95,-53.5,34.36,Poc1,New meter + Mettler Toledo; direct measurement,
+20180616,20180616,10:30,Tank10,Ambient,Tank,26.62,-52.2,34.29,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180616,20180616,10:30,Tank11,XLow,Tank,26.19,-21.7,34.25,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180616,20180616,10:30,Tank12,Low,Tank,26.23,-39.2,34.27,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180616,20180616,10:30,Tank13,Ambient,Tank,26.28,-52.5,34.25,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180616,20180616,10:30,Tank14,XLow,Tank,26.17,-21.7,34.37,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180616,20180616,10:30,Tank15,Low,Tank,26.21,-39,34.25,Poc1,New meter + Mettler Toledo; direct measurement,& have Mon1
+20180616,20180616,10:30,Conical16,Low,Conical,27.15,-37.7,34.46,Mon1,New meter + Mettler Toledo; direct measurement,
+20180616,20180616,10:30,Conical17,XLow,Conical,27.08,-19.9,34.26,Mon1,New meter + Mettler Toledo; direct measurement,
+20180616,20180616,10:30,Conical18,Ambient,Conical,27.17,-49.9,34.42,Mon1,New meter + Mettler Toledo; direct measurement,
