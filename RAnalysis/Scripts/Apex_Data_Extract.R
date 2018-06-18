@@ -6,7 +6,7 @@
 library("XML")
 library("plyr")
 
-xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806080000&days=2") #read in the date plus x days of Apex data
+xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806080000&days=9") #read in the date plus x days of Apex data
 
 Apex.Data <- ldply(xmlToList(xmlfile), data.frame) #convert xml to dataframe
 
@@ -22,7 +22,7 @@ write.csv(Probe.Data, "~/MyProjects/BioMin_HIS/RAnalysis/Output/Apex_Data_Output
 #plot Temp and pH and save to output
 pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Apex_Output.pdf")
 par(mfrow=c(2,1))
-plot(as.numeric(as.character(Tmp_XL)) ~ Date.Time, Probe.Data, col = "grey", type="l", ylim=c(25.5, 28),  xlab="Time", ylab="Temperature °C")
+plot(as.numeric(as.character(Tmp_XL)) ~ Date.Time, Probe.Data, col = "grey", type="l", ylim=c(25.5, 30),  xlab="Time", ylab="Temperature °C")
 lines(as.numeric(as.character(Tmp_L)) ~ Date.Time, Probe.Data, col = "red")
 lines(as.numeric(as.character(Tmp_A)) ~ Date.Time, Probe.Data, col = "blue")
 axis.POSIXct(side=1, Probe.Data$Date.Time)

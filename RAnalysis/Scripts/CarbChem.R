@@ -72,23 +72,61 @@ STris<-35 #salinity of the Tris
 phTris<- (11911.08-18.2499*STris-0.039336*STris^2)*(1/(SW.chem$Temperature+273.15))-366.27059+ 0.53993607*STris+0.00016329*STris^2+(64.52243-0.084041*STris)*log(SW.chem$Temperature+273.15)-0.11149858*(SW.chem$Temperature+273.15) #calculate the pH of the tris (Dickson A. G., Sabine C. L. and Christian J. R., SOP 6a)
 SW.chem$pH.Total<-phTris+(mvTris/1000-SW.chem$pH.MV/1000)/(R*(SW.chem$Temperature+273.15)*log(10)/F) #calculate the pH on the total scale (Dickson A. G., Sabine C. L. and Christian J. R., SOP 6a)
 
-SW.chem <- subset(SW.chem, Period1 == "Poc1")
-SW.chem <- subset(SW.chem, Type == "Tank")
-SW.chem$Sample.ID <- factor(SW.chem$Sample.ID)
+SW.chem1 <- subset(SW.chem, Period1 == "Poc1" | Period1 == "PocMon")
+SW.chem1 <- subset(SW.chem1, Type == "Tank")
+SW.chem1$Sample.ID <- factor(SW.chem1$Sample.ID)
 
 pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Treatment_Measures_Poc1.pdf")
 par(mfrow=c(3,2))
-plot(SW.chem$Treatment, SW.chem$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,30))
-plot(SW.chem$Treatment, SW.chem$pH.Total, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
-plot(SW.chem$Treatment, SW.chem$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,37))
+plot(SW.chem1$Treatment, SW.chem1$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,30))
+plot(SW.chem1$Treatment, SW.chem1$pH.Total, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
+plot(SW.chem1$Treatment, SW.chem1$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,37))
 dev.off()
 
 pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Tank_Measures_Poc1.pdf")
 par(mfrow=c(1,3))
-plot(SW.chem$Sample.ID, SW.chem$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(23,30),las=2)
-plot(SW.chem$Sample.ID, SW.chem$pH.Total, xlab="Tank", ylab="pH Total Scale", ylim=c(7.0,8.2),las=2)
-plot(SW.chem$Sample.ID, SW.chem$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(30,37),las=2)
+plot(SW.chem1$Sample.ID, SW.chem1$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(23,30),las=2)
+plot(SW.chem1$Sample.ID, SW.chem1$pH.Total, xlab="Tank", ylab="pH Total Scale", ylim=c(7.0,8.2),las=2)
+plot(SW.chem1$Sample.ID, SW.chem1$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(30,37),las=2)
 dev.off()
+
+SW.chem2 <- subset(SW.chem, Period1 == "Mon1" | Period1 == "PocMon")
+#SW.chem <- subset(SW.chem, Type == "Tank")
+SW.chem2$Sample.ID <- factor(SW.chem2$Sample.ID)
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Treatment_Measures_Mont1.pdf")
+par(mfrow=c(3,2))
+plot(SW.chem2$Treatment, SW.chem2$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,30))
+plot(SW.chem2$Treatment, SW.chem2$pH.Total, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
+plot(SW.chem2$Treatment, SW.chem2$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,37))
+dev.off()
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Tank_Measures_Mont1.pdf")
+par(mfrow=c(1,3))
+plot(SW.chem2$Sample.ID, SW.chem2$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(23,30),las=2)
+plot(SW.chem2$Sample.ID, SW.chem2$pH.Total, xlab="Tank", ylab="pH Total Scale", ylim=c(7.0,8.2),las=2)
+plot(SW.chem2$Sample.ID, SW.chem2$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(30,37),las=2)
+dev.off()
+
+SW.chem3 <- subset(SW.chem, Period1 == "BigMon")
+#SW.chem <- subset(SW.chem, Type == "Tank")
+SW.chem3$Sample.ID <- factor(SW.chem3$Sample.ID)
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Treatment_Measures_BigMont1.pdf")
+par(mfrow=c(3,2))
+plot(SW.chem3$Treatment, SW.chem3$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,30))
+plot(SW.chem3$Treatment, SW.chem3$pH.Total, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
+plot(SW.chem3$Treatment, SW.chem3$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,37))
+dev.off()
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Daily_Tank_Measures_BigMont1.pdf")
+par(mfrow=c(1,3))
+plot(SW.chem3$Sample.ID, SW.chem3$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(23,30),las=2)
+plot(SW.chem3$Sample.ID, SW.chem3$pH.Total, xlab="Tank", ylab="pH Total Scale", ylim=c(7.0,8.2),las=2)
+plot(SW.chem3$Sample.ID, SW.chem3$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(30,37),las=2)
+dev.off()
+
+
 
 ##### DISCRETE TA CALCULATIONS #####
 TA <- read.csv("Cumulative_TA_Output.csv", header=TRUE, sep=",", na.strings="NA")  #read in  TA results
@@ -108,51 +146,54 @@ carb.output$HCO3 <- carb.output$HCO3*1000000 #convert to µmol kg-1
 carb.output$CO3 <- carb.output$CO3*1000000 #convert to µmol kg-1
 carb.output$DIC <- carb.output$DIC*1000000 #convert to µmol kg-1
 carb.output <- carb.output[,-c(1,4,5,8,10:13,19)] #subset variables of interest
-carb.output <- cbind(SW.chem$Date,  SW.chem$Sample.ID,  SW.chem$Treatment, carb.output) #combine the sample information with the seacarb output
-colnames(carb.output) <- c("Date",  "Tank",  "Treatment",	"Salinity",	"Temperature", "pH",	"CO2",	"pCO2","HCO3",	"CO3",	"DIC", "TA",	"Aragonite.Sat") #Rename columns to describe contents
+carb.output <- cbind(SW.chem$Date,  SW.chem$Sample.ID,  SW.chem$Treatment, SW.chem$Period1, SW.chem$Type.x, carb.output) #combine the sample information with the seacarb output
+colnames(carb.output) <- c("Date",  "Sample.ID",  "Treatment", "Period1","Type",	"Salinity", "Temperature", "pH",	"CO2",	"pCO2","HCO3",	"CO3",	"DIC", "TA",	"Aragonite.Sat") #Rename columns to describe contents
 write.table(carb.output, "~/MyProjects/BioMin_HIS/RAnalysis/Output/Seawater_chemistry_table_Output_All.csv", sep=",", row.names = FALSE) #save data
 
-carbo.melted <- melt(carb.output) #reshape the dataframe to more easily summarize all output parameters
-mean.carb.output <-ddply(carbo.melted, .(Treatment, variable), summarize, #For each subset of a data frame, apply function then combine results into a data frame.
-                         N = length(na.omit(value)), #number of records
-                         mean = (mean(value)),       #take the average of the parameters (variables) summarized by treatments
-                         sem = (sd(value)/sqrt(N))) #calculate the SEM as the sd/sqrt of the count or data length
-mean.carb.output # display mean and sem 
 
-pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Water_Chem_withTA.pdf")
+carb.output1 <- subset(carb.output, Period1 == "Poc1" | Period1 == "PocMon")
+carb.output1 <- subset(carb.output1, Type == "Tank")
+carb.output1$Sample.ID <- factor(carb.output1$Sample.ID)
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Poc1_Water_Chem_withTA.pdf")
 par(mfrow=c(3,2))
-plot(carb.output$Treatment, carb.output$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(23,28))
-plot(carb.output$Treatment, carb.output$pH, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
-plot(carb.output$Treatment, carb.output$pCO2, xlab="Treatment", ylab="pCO2 µmol kg-1", ylim=c(350,2800))
-plot(carb.output$Treatment, carb.output$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(30,35))
-plot(carb.output$Treatment, carb.output$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2250))
-plot(carb.output$Treatment, carb.output$Aragonite.Sat, xlab="Treatment", ylab="Aragonite Saturation State", ylim=c(0,4))
+plot(carb.output1$Treatment, carb.output1$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(24,29))
+plot(carb.output1$Treatment, carb.output1$pH, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
+plot(carb.output1$Treatment, carb.output1$pCO2, xlab="Treatment", ylab="pCO2 µmol kg-1", ylim=c(350,3500))
+plot(carb.output1$Treatment, carb.output1$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(33,35))
+plot(carb.output1$Treatment, carb.output1$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2250))
+plot(carb.output1$Treatment, carb.output1$Aragonite.Sat, xlab="Treatment", ylab="Aragonite Saturation State", ylim=c(0,4))
 dev.off()
 
-# mean.carb.output <- mean.carb.output[with(mean.carb.output, order(variable)), ] #order the data by the variables
-# carb.table <- mean.carb.output[,-c(3)] #remove column
-# carb.table <- reshape(carb.table, direction="wide", timevar="variable", idvar="Treatment") #reshape data
-# carb.table$N <- c(mean.carb.output[1,3],mean.carb.output[2,3]) #include sample size
-# #create an empty dataframe 
-# chem.table <- matrix(nrow = 2, ncol = 1) #set the dimensions of the dataframe
-# colnames(chem.table)<-c("Treatment") #identify column names
-# chem.table <- data.frame(chem.table) #change to dataframe
-# chem.table$Treatment <- carb.table$Treatment #add treatment info
-# chem.table$N <- carb.table$N #add sample size
-# chem.table$Temperature <- paste(round(carb.table$mean.Temperature, digits=2), round(carb.table$sem.Temperature, digits=2), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$Salinity <- paste(round(carb.table$mean.Salinity, digits=1), round(carb.table$sem.Salinity, digits=1), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$Total.Alkalinity <- paste(round(carb.table$mean.TA, digits=0), round(carb.table$sem.TA, digits=0), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$pH <- paste(round(carb.table$mean.pH, digits=2), round(carb.table$sem.pH, digits=2), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$pCO2 <- paste(round(carb.table$mean.pCO2, digits=0), round(carb.table$sem.pCO2, digits=0), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$CO2 <- paste(round(carb.table$mean.CO2, digits=0), round(carb.table$sem.CO2, digits=0), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$HCO3 <- paste(round(carb.table$mean.HCO3, digits=0), round(carb.table$sem.HCO3, digits=0), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$CO3 <- paste(round(carb.table$mean.CO3, digits=0), round(carb.table$sem.CO3, digits=0), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$DIC <- paste(round(carb.table$mean.DIC, digits=0), round(carb.table$sem.DIC, digits=0), sep=' ± ') #add combined mean and sem with ± separating them
-# chem.table$Arag.Sat <- paste(round(carb.table$mean.Aragonite.Sat, digits=1), round(carb.table$sem.Aragonite.Sat, digits=1), sep=' ± ') #add combined mean and sem with ± separating them
-# 
+
+carb.output2 <- subset(carb.output, Period1 == "Mon1" | Period1 == "PocMon")
+#carb.output1 <- subset(carb.output1, Type == "Tank")
+carb.output2$Sample.ID <- factor(carb.output2$Sample.ID)
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Mont1_Water_Chem_withTA.pdf")
+par(mfrow=c(3,2))
+plot(carb.output2$Treatment, carb.output2$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(24,29))
+plot(carb.output2$Treatment, carb.output2$pH, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
+plot(carb.output2$Treatment, carb.output2$pCO2, xlab="Treatment", ylab="pCO2 µmol kg-1", ylim=c(350,3500))
+plot(carb.output2$Treatment, carb.output2$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(33,35))
+plot(carb.output2$Treatment, carb.output2$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2250))
+plot(carb.output2$Treatment, carb.output2$Aragonite.Sat, xlab="Treatment", ylab="Aragonite Saturation State", ylim=c(0,4))
+dev.off()
 
 
+carb.output3 <- subset(carb.output, Period1 == "BigMon")
+#carb.output1 <- subset(carb.output1, Type == "Tank")
+carb.output3$Sample.ID <- factor(carb.output3$Sample.ID)
 
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/BigMont1_Water_Chem_withTA.pdf")
+par(mfrow=c(3,2))
+plot(carb.output3$Treatment, carb.output3$Temperature, xlab="Treatment", ylab="Temperature°C", ylim=c(24,29))
+plot(carb.output3$Treatment, carb.output3$pH, xlab="Treatment", ylab="pH Total Scale", ylim=c(7.0,8.2))
+plot(carb.output3$Treatment, carb.output3$pCO2, xlab="Treatment", ylab="pCO2 µmol kg-1", ylim=c(350,3500))
+plot(carb.output3$Treatment, carb.output3$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(33,35))
+plot(carb.output3$Treatment, carb.output3$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2250))
+plot(carb.output3$Treatment, carb.output3$Aragonite.Sat, xlab="Treatment", ylab="Aragonite Saturation State", ylim=c(0,4))
+dev.off()
 
 
 
