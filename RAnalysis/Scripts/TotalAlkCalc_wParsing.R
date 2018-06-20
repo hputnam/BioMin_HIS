@@ -24,8 +24,8 @@ library(tidyverse)
 
 #CHANGE THESE VALUES EVERY DAY----------------------------------------------
 path<-"Data/20180619" #the location of all your titration files
-massfile<-"20180619mass_Run1.csv" # name of your file with masses
-titrationfile<-'20180619_Run1.csv'# name of the last titration file run
+massfile<-"20180619mass_Run2.csv" # name of your file with masses
+titrationfile<-'20180619_Run2.csv'# name of the last titration file run
 
 # Date that the data were run
 date<-'20180619'
