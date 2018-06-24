@@ -23,12 +23,12 @@ library(seacarb) #used to calculate TA
 library(tidyverse)
 
 #CHANGE THESE VALUES EVERY DAY----------------------------------------------
-path<-"Data/20180621" #the location of all your titration files
-massfile<-"20180621mass_Run2.csv" # name of your file with masses
-titrationfile<-'20180621_Run2.csv'# name of the last titration file run
+path<-"Data/20180623" #the location of all your titration files
+massfile<-"20180623mass_Run2.csv" # name of your file with masses
+titrationfile<-'20180623_Run2.csv'# name of the last titration file run
 
 # Date that the data were run
-date<-'20180621'
+date<-'20180623'
 
 
 #DO NOT CHANGE ANYTHING BELOW THIS LINE UNLESS A NEW BOTTLE OF ACID IS USED
@@ -40,7 +40,7 @@ Mass<-read.csv(file.path(path,massfile), header=T, sep=",", na.string="NA", as.i
 pHCal<-read.csv('Data/pHCalibration.csv') # read in the pH Calibration file
 
 #select the calibration for the correct date
-pHData<-pHCal[pHCal$Date==date,]
+pHData<-pHCal[pHCal$Date==date & pHCal$Calib.status=="Pass",]
 
 # calculate pH 3 and 3.5 based on the slope and intercept from pH 4, 7, and 10 calibration
 mod.pH<-lm(c(pHData$pH4, pHData$pH7, pHData$pH10)~c(4,7,10)) # linear model

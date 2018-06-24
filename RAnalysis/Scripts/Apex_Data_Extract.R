@@ -6,7 +6,11 @@
 library("XML")
 library("plyr")
 
-xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806190000&days=3") #read in the date plus x days of Apex data
+#############################################################
+setwd("~/MyProjects/BioMin_HIS/RAnalysis/Data") #set working directory
+#############################################################
+
+xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806200000&days=4") #read in the date (180620) plus # days (days=4) of Apex data
 
 Apex.Data <- ldply(xmlToList(xmlfile), data.frame) #convert xml to dataframe
 
@@ -31,9 +35,22 @@ plot(as.numeric(as.character(pH_XL)) ~ Date.Time, Probe.Data, col = "grey", type
 lines(as.numeric(as.character(pH_L)) ~ Date.Time, Probe.Data, col = "red")
 lines(as.numeric(as.character(pH_A)) ~ Date.Time, Probe.Data, col = "blue")
 axis.POSIXct(side=1, Probe.Data$Date.Time)
+dev.off()
 
-# plot(as.numeric(as.character(Salt_XL)) ~ Date.Time, Probe.Data, col = "grey", type="l", ylim=c(20, 35),  xlab="Time", ylab="Salinity psu")
-# lines(as.numeric(as.character(Salt_L)) ~ Date.Time, Probe.Data, col = "red")
-# lines(as.numeric(as.character(Salt_A)) ~ Date.Time, Probe.Data, col = "blue")
-# axis.POSIXct(side=1, Probe.Data$Date.Time)
+All.Data <- read.csv("Apex_Data_All.csv", header=TRUE, sep=",", na.string="NA", as.is=TRUE)
+All.Data$Date.Time <- as.POSIXct(All.Data$Date.Time, format = "%m/%d/%Y %H:%M", tz="HST") #convert date to HI time
+
+
+#plot Temp and pH and save to output
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/All_Apex_Output.pdf")
+par(mfrow=c(2,1))
+plot(as.numeric(as.character(Tmp_XL)) ~ Date.Time, All.Data, col = "grey", type="l", ylim=c(25.5, 30),  xlab="Time", ylab="Temperature °C")
+lines(as.numeric(as.character(Tmp_L)) ~ Date.Time, All.Data, col = "red")
+lines(as.numeric(as.character(Tmp_A)) ~ Date.Time, All.Data, col = "blue")
+axis.POSIXct(side=1, Probe.Data$Date.Time)
+
+plot(as.numeric(as.character(pH_XL)) ~ Date.Time, All.Data, col = "grey", type="l", ylim=c(7.1, 8.1),  xlab="Time", ylab="pH NBS")
+lines(as.numeric(as.character(pH_L)) ~ Date.Time, All.Data, col = "red")
+lines(as.numeric(as.character(pH_A)) ~ Date.Time, All.Data, col = "blue")
+axis.POSIXct(side=1, Probe.Data$Date.Time)
 dev.off()
