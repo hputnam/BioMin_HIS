@@ -1,4 +1,5 @@
 # HIMB 2018 Wet Lab Information
+Last Revised: 20180624 VJ Schmidt
 ##### Lab Need to Know:
 - Dry bench (1st bench, closest to light set switches) should stay dry, do not move wet/liquid materials since electronics including laptops are kept here.
 
@@ -16,11 +17,12 @@
 
 - **[**Tris_Calibration**](#Tris_Calibration)**
 	- Measure pH (mV) and Temperature (°C) across a range below your lowest temperature and above your highest at ~0.4°C increments
-	- Save a new CSV file named today's date (yyyymmdd.csv) and save to "pH_Calibration_Files" folder.
+	- Save a new CSV file named today's date (yyyymmdd.csv) and save to the "pH_Calibration_Files" folder found in BioMin_HIS/RAnalysis/Data/pH_Calibration_Files.
 	- Run the R Script titled "pH_Tris_Curve.R" on RStudio. Check the R^2 value and do not move on until the R^2 is equal to or above 0.98.		
 - **[**Measure**](#Measure) pH, temperature, and salinity of each tank in use.**
 	- Take these measurements 2-3 times daily.
-	- If measuring in a larval tank use 153µm mesh to collect water sample so as not to interfere with larvae or carry them over on the probe.
+	- If measuring in a larval tank use the falcon tube with 153µm mesh, the plastic round bin and turkey baster to collect water sample so as not to interfere with larvae or carry them over on the probe.
+	- Remember to rinse falcon tube, plastic round bin, and turkey baster in between measurements of tanks with larvae.
 	- Update "Daily_Temp_pH_Sal.csv".
 - **Take [**water_samples**](#water_samples) immediately as/after probe measurements are taken from each tank.**
 	- Take water samples 1 time daily unless the experiment is short (1-2 days) and then take multiple water samples each day along with multiple probe measurements.
@@ -53,7 +55,7 @@
 
 ### Lab Area Information:
 ---------
-- Lights are on a timer, they automatically turn off at 6:00 pm and on at 6:00am. 
+- Lights are on a timer, they automatically turn off at 6:00 pm and on at 6:00am. ***Always leave light switches A, B and C ON.***
 - DI water and ice are in the same hallway as Gates Lab, room 116 labeled "Sterilization". Follow the instructions on the DI water machine.
 
 ## Protocols:
@@ -64,17 +66,24 @@
 
 ***Measured with A325 Thermo meter and Mettler Toledo probe 51343101 and Control Company Certified traceable Temperature probe***
 
-1. Fill a small clean container with certified Tris standard solution from the Dickson Lab. 
+1. Fill a small clean container (preferably clear sample cups with orange caps) with certified Tris standard solution from the Dickson Lab. 
 	- After opening a new bottle, write "Opened", the date yyyymmdd, your initials and Putnam Lab - e.g., "HP - Putnam Lab". 
 2. Set the Tris solution container on ice to cool the solution down to desired temperature . 
-	- **Note: This value will change based on the range of temperature you expect to be measuring. This will chaneg through time in an experiment where temperature is not held constant*
+	- **Note: This value will change based on the range of temperature you expect to be measuring. This will change through time in an experiment where temperature is not held constant*
+		-***The range must be 1°C below the observed minimum during measurements and 1°C above the observed maximum. A typical range throughout the summer might be 25°C to 30°C as the temperature of the tanks increases during the hotter months such as August and September***
 3. With the certified temperature probe, measure the Tris solution temperature. Swirl the temperature probe in the solution as it measures to ensure the solution is well mixed. 
 4. With the Thermo A325 meter with the Mettler Toledo pH probe attached, click "Measure" on the meter when the Tris solution is nearing the first temperature (e.g., 25°C). Swirl the pH probe in the solution as it measures to ensure the solution is well mixed. 
 5. Wait for the temperature and mV value to stabilize and record values. 
 6. Warm the Tris Buffer by gently holding the outside of the tube/container. But be careful to not hold the container for too long or too aggressively, otherwise the temperature will spike without the chance to record values across the temperature range.
 7. Make temperature and pH measurements across the desired range, with increments of about 0.4°C. Read the temperature value as soon as the pH meter states "ready" instead of "stabilizing". 
-8. Save measured values a new CSV file named today's date (yyyymmdd) and save to "pH_Calibration_Files" folder. Column 1: mVTris (pH values); Column 2: TTris (temperature values).
+8. Save measured values a new CSV file named today's date (yyyymmdd.csv) and save to "pH_Calibration_Files" folder. Column 1: mVTris (pH values); Column 2: TTris (temperature values).
 9. Run the R Script titled "pH_Tris_Curve.R" on RStudio. Check the R^2 value and do not move on until the R^2 is equal to or above 0.98.
+	-**Remember: to run the R script, you need to:##
+		-**Make sure the Tris file was saved as a ***.csv*** **
+		-**Make sure that the data in the excel sheet is correct and the signs (+/-) are also correct.
+		-**Check that the directory is set to where the Tris file (yyyymmdd.csv) is.**
+		-**Change the date in the R code to the date/name (since the name of the file is just the date) of the Tris file you are trying to run**
+10. Email the file to Hollie at hputnam@uri.edu.
 
 Back to [Daily_Tasks](#Daily_Tasks).
 
@@ -86,7 +95,8 @@ Back to [Daily_Tasks](#Daily_Tasks).
 2. pH and Salinity: Using the A325 meter and Mettler-Toledo probe, click "Channel" until the screen splits to display both the pH (mV) and salinity (psu).
 	- If the pH or salinity is displayed in different used than desired, click channel until either pH or salinity is displayed. Click "mode" to change the units the probe measures in.
 	- **pH probe needs to be swirled, but the conductivity (salinity) probe does not. The conductivity probe has cut-outs on either side of the sensor, these need to be fully submerged.** 
-3. Update "Daily_Temp_pH_Sal.csv" file.
+	- ** Temperature probe should not be in contact with anything but water ** 
+3. Update "Daily_Temp_pH_Sal.csv" file in BioMin_HIS/RAnalysis/Data/Daily_Temp_pH_Sal.csv and email the file to Hollie at hputnam@uri.edu.
 
 Back to [Daily_Tasks](#Daily_Tasks).
 
@@ -94,9 +104,10 @@ Back to [Daily_Tasks](#Daily_Tasks).
 
 *These will be used for Titration Alkalinity titrations. To ensure the sample only contains water from that tank or conical, each bottle will be rinsed three times before collecting the final sample.*
 1. Label a white, nalgene bottle with the tank # and treatment type. 
-2. Fill the bottle about 1/4 with tank/conical water, close with the cap, and shake the bottle. Pour out the water down the outflow drain. Repeat twice more to fully since the bottle. 
+2. Fill the bottle about 1/4 with tank/conical water, close with the cap, and shake the bottle. Pour out the water down the outflow drain. Repeat twice more to fully rinse the bottle. 
 3. Fill the bottle completely full, avoiding any air pockets throughout the bottle or at the top before closing.
 4. Repeat for each tank. 
+**To collect a junk sample to use prior to CRMs, sample a second time from a random tank and label the bottle with that tank number in order to keep track of the sample and see how much variability there is between using the first slot of the rondo and after several other samples have been run** 
 
 *Since no Mercuric Chloride is being deposited into the samples and the bottles are light-penetrated, water samples MUST be run **as soon as possible** in order to be as accurate as possible. When light can reach the water sample and no mercuric chloride is used to kill any bacteria or living organisms in the sample, the potential for the water chemistry to change NOT in response to the experiment in much higher.*
 
@@ -106,7 +117,10 @@ Back to [Daily_Tasks](#Daily_Tasks).
 *Different flow rates between tanks can greatly affect the tank's water chemistry due to differneces in turnover rate.*
 1. Flow rate will be determined by volume (mL) divided by time (seconds).
 2. Measure the amount of water accumulated in a graduated cylinder over 15 seconds.
-5. Record volume, time, and the calculated flow rate (volume in milliliters divided by time in seconds). Update "Flow_Rates.csv".
+3. Record volume, time, and the calculated flow rate (volume in milliliters divided by time in seconds). Update "Flow_Rates.csv" in BioMin_HIS/RAnalysis/Data and email to Hollie at hputnam@uri.edu.
+4. Calculate the flow rates for all three header tanks and tanks 10-15. Remember to do the drippers as well since these can get clogged up. If a dripper is slow, replace it with a new one. If it continues to be a problem, after the round bins containing the **Montipora c.**  larvae, put a stopper to the dripper line of all tanks and only have one line per tank with the black spigots running. 
+
+** Notes: Flow rates may be measured twice a week during heavy work load weeks **
 
 <a name="Titration_Alkalinity"></a> **Titration_Alkalinity** 
 See full titration protocol
@@ -115,6 +129,7 @@ See full titration protocol
 
 Header Tanks:
 
+***Never do this without consulting Hollie first***
 1. Log onto the Apex Fusion app.2. 
 2. Click on the dashboard icon. Once at the dashboard, EB8_1_L, EB8_1_XL, and EB8_1_A switches will show above each treatment's 3 measurement (pH, temperature, and salinity) graphs (in orange with white data points). 
 3. ***TURN OFF THE TOGGLE TO STOP THE CO2 FROM BEING INJECTED*** 
