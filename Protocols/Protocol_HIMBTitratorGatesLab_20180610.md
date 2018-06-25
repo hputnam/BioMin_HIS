@@ -1,6 +1,6 @@
 # Standard Protocol Procedure for Using the HIMB Titrator (Gates Lab)
 
-Last Revised: 20180619 EL Strand (Putnam Lab)
+Last Revised: 20180624 VJ Schmidt
 
 Contents
 - [**Precautions**](#Precautions)
@@ -30,15 +30,17 @@ _____
 
 
 2. <a name="Setup"></a> **Setup**
-	- Turn on the Laptop and open the LabX software 
+	- Turn on the Laptop and open the LabX software. **Wait for the program to fully load** 
 	- Turn on the Titrator and Rondolino Autosampler
 		- To turn on the Titrator, press the Power Button in the front of the machine (far upper-right corner).
 		- To turn on the Autosampler, push on the Power switch in the back, bottom right of the machine (black switch). 
 	- Using the laptop, create a new folder within the general data folder [C: /Users/Gates Lab/Desktop/Putnam_20180528/Data] for each dat. Name it by the date in yyyymmdd format. Example: 20180602 *(That is your folder of the day.)*
 	
-	- ***Double check that there is an empty 80ml cup in position 00.*** 
+	- ***Double check that there is an empty 80ml cup in position 00. The cup used is labeled as "storage acid"*** 
 
 	- To add a cup in the 00 position, raise the Rondolino by pressing the left blue button "Rotate 180 degrees" (with no numbered tick marks). Press the same button to return the Rondolino to position 00 with the stirrer and acid dispensing tube now in an empty cup. 
+	
+	- Take out the temperature probe before the next step and make sure to pick up the large amber acid bottle and gently rotate it around while tilting it to collect any evaporated acid residue that might have collected above the acid line in the bottle.
 
 	- PURGING (RINSING): Using the Titrator tablet, tap “Manual”, "Burette", "Rinse". Set Titrant: HCl, Concentration: 0.1 mol/L, Drive: 1, Cycles: 3, Discharge volume: 100%, Fill rate: 100%. See notes below before pressing "Start".
 		
@@ -49,8 +51,7 @@ _____
 		- Rinse is used to purge any air bubbles that may occur in the acid line. If there are more air bubbles, flick both tubes until they disappear. 
 		***DO NOT START TITRATIONS IF THERE ARE STILL BUBBLES. BUBBLES WILL RESULT IN A LOWER ACID DELIVERY TO THE TITRATION THAN EXPECTED  AND WILL INTRODUCE ERROR INTO THE MEASUREMENTS***.
 	- After Purging/Rinsing, click "OK" to bring the titrator screen back to home. 
-	- Raise the Rondolino and pour the clean acid into the glass bottle that is connected to the titrator by removing the small white plug.
-
+	- Raise the Rondolino, pour the clean acid into the glass bottle that is connected to the titrator by removing the small white plug and place the temperature probe back in its slot by the stirrer.
 	- Using DI water and a kim wipe, clean the acid cup. Leave upside down on brown paper towel to dry.
 	- Located at the top right side at the back of the Titrator, there will be a pH Sensor (DGi 115-SC). Place the sensor in the Robdolino position marked with a black arrow, next to the stirrer. 
 		- Open the grey rubber cap on the pH sensor and leave open throughout use. 
@@ -67,15 +68,16 @@ _____
 		- Click "Start" to run pH Calibration.
 	- While calibration is running: in the LabX homepage, click "Show Workbench" > "T50_GatesLab (T50)"
 		- Watch the graph for anomalies, including the graph jumping constantly.
-			- *Unless the zoom scale of the graph in the y-axis is at .1, small zig-zags are acceptable, but any change >3 mV over time means that the calibration should be re-done with new buffers.*
+			- *Unless the zoom scale of the graph in the y-axis is at .1, small zig-zags are acceptable, but any change >2 mV over time means that the calibration should be re-done with new buffers.*
 		- Once finished, the graph should be a flat line for individual samples or a downward graph if all three points are displayed. *If the results are not as described in step [vi.a.b], replace buffers and redo calibration [i. - v.].*
 	- Using Excel, open the “pHCalibration.csv” file. [C: /Users/Gates Lab/Desktop/Putnam_20180528/Data] 
-	- Record the Date, Zero Point, Slope, pH 4.0, pH 7.0, pH 10.0, and any comments in the pHcalibration.csv file. Record the same data with the same column heading format in the Putnam Lab notebook. Make sure to mark your initials next to each entry  you do. 
+	- Record the Date, Zero Point, Slope, pH 4.0, pH 7.0, pH 10.0, and any comments in the pHcalibration.csv file. Record the same data with the same column heading format in the Putnam Lab Binder. Make sure to mark your initials next to each entry  you do. 
 		- The Notes are used to determine the age of the buffer and any other comments. Mark the day the pH calibration solution is changed.
 		- Zero Point and Slope: LabX > Data > “Result Sets” > “My Latest Result Sets” > Double Click "Origin ID: 100 | Calibration DG115-SC" > "Raw Data" > Scroll to the bottom of the report to find "SLOPECal" and "ZEROCal". *Be very careful to open the correct result set, pay attention to the date and time.*
 		- pH values: "Raw Data" > Each sample will have an "E" (mV) value and "T" (degrees celsius) value.
 			- The results set will state 3 samples were run and gives the report in the order of positions, position 01 is the 1st sample, position 02 is the 2nd sample, and so on.
-	- Once the calibrations are complete, remove the cups from the Autosampler and pour back into the appropriate used pH buffer storage tube. 
+	- Once the calibrations are complete, check in the LabX -> Data -> "Results" -> "My Latest Results" tab to see if each individual calibration was "OK" or if they failed (Scroll across the columns to find this).
+	- Remove the cups from the Autosampler and pour back into the appropriate used pH buffer storage tube. 
 	- Save document and make sure the file is saved to the “Data” Folder. Ignore the failed product activation warning that might appear with the use of Excel. Overriding the previous file with the new saved file is OK, as long the data is saved and up to date.
 	- Rinse the titration cups used for pH solutions with DI water and place upside down on the brown paper towel to dry.
 
@@ -87,9 +89,10 @@ _____
 		- Record the sample ID ("Junk") and mass value. Place in position 01 on the Autosampler.
 	- CRM Samples (2 replicates)
 		- Take the titration cups from the marked bin labeled "CRM Mercuric Chloride". Place on the scale and tare. Carefully add between 59.00 - 60.00g of Certified Reference Material (CRM). 
-		- Record the sample ID with the CRM batch number and mass value in the noteook. Label the side of the cup "CRM1" and place in position 02. 
+		- Record the sample ID with the CRM batch number and mass value in the lab binder. Label the side of the cup "CRM1" and place in position 02. 
 		- Repeat previous two steps. Label the side of the cup "CRM2" and place in position 03.
 	*Note: If a new bottle of CRM is used, write the date opened, your initials, and your lab on the bottle (ex: Opened 06/02/2018 ES (Putnam)). If the new bottle is a new batch, make note in the lab notebook*
+	***Make sure to CHANGE your gloves setting up the CRMs to avoid spreding Mercuric Chloride on to the other lab equipment such as the laptop***
     - If facing the lab bench, extra CRM can be found in the room adjacent and to the left of the bench. There is a large grey plastic box underneath the furthest counter to the left. Take one bottle at a time when needed.
     - LabX: Analysis > Released Methods: ID 000 | URIBioMin > Right click > Start > T50_GatesLab
 		- Click "Add" to add as many ID rows as needed.
@@ -126,10 +129,11 @@ _____
 	- *Note: Autosampler only has 9 sample positions, plan time accordingly. 9 samples takes approximately an hour and a half.* Loading the real water samples will be the same procedure as loading CRM samples.
 	- Turn on the scale (to the left of the titrator) and tare a titration cup. Carefully pour 60g of a real water sample. **Each sample must be between 59.00 - 60.00 g.**
 		- Record mass value in Putnam Lab notebook with the date and sample ID. Write the ID No. on the side of the cup on tape in sharpie (ex: Conical_8 sample - write "C8" on the cup). Place in position 01 on the Autosampler.
-	- Repeat for each water sample. Write the mass values in the notebook in the order positioned in the autosampler.
+	- Repeat for each water sample. Write the mass values in the lab binder in the order positioned in the autosampler.
     - LabX: Analysis > Released Methods: ID 000 | URIBioMin > Right click > Start > T50_GatesLab
 		- Click "Add" to add as many ID rows as needed.
 		- Input ID No. with the appropriate mass value. If the sample came from a conical, label it "Conical#". If the sample came from a tank, label it "Tank#". Do not include a space between "Tank" and "1". *The R script will only read "Tank1" or "Conical1".* (Ex: "T1"; 59.67)	
+	***Before leaving, record the start time and calculate the end time. Then, put an alarm on your phone so that when TA is over, you immediately head to the lab and put the pH probe away so that it does not sit in DI water for several hours during busy days***
 	- Once finished, view data: LabX > Data > “Reports” > “My Latest Reports” > Double Click the latest "Origin ID 000 | URIBioMin". *The report will be the top result, but be patient while LabX creates the report. Do not export the wrong file, pay attention to the date and time.* 
 		- "Export as" > "CSV". Name: "yyyymmdd_all" (ex: 20180602_Run1).
 	- Add the water sample mass values to the mass file (yyyymmddmass_Run1) with the correct salinity value. Refer to written notes or log in to github.com > search hputnam > BioMin_HIS > RAnalysis > Data > "Daily_Temp_pH_Sal.csv". Choose the salinity values from the measurement set that matches the time the water was sampled. Log out of Github.com once finished collecting salinity values.
