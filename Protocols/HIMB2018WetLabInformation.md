@@ -8,7 +8,7 @@ Last Revised: 20180624 VJ Schmidt
 #### <a name="Daily_Tasks"></a> **Daily Tasks**:
 ---------
 ###### First thing in the morning: 
-1. Check the CO2 tank to make sure the black tick mark is just below 1000 PSI. The farthest scale to the left (directly horizontal) is reading the levels of the CO2 tank. The scales above each CO<sub>2</sub> line is reading the level of CO2 in each line directly below it. 
+1. Check the CO<sub>2</sub> tank to make sure the black tick mark is just below 1000 PSI. The farthest scale to the left (directly horizontal) is reading the levels of the CO<sub>2</sub> tank. The scales above each CO<sub>2</sub> line is reading the level of CO<sub>2</sub> in each line directly below it. 
 
 	- If the tank is low on CO<sub>2</sub>, contact Hollie @ hputnam.uri.edu asap so more can be ordered. It can take up to 1 week to arrive.		
 
@@ -60,7 +60,7 @@ Last Revised: 20180624 VJ Schmidt
 
 ## Protocols:
 ---------
-<a name="Tris_Calibration"></a> **Tris_Calibration**\
+<a name="Tris_Calibration"></a> **Tris_Calibration**
 
 *The goal of the Tris calibration is to measure pH (mV) across a range of temperatures lower and higher than currently experienced in the tanks. The temperature values and corresponding pH values must have a linear relationship and an R^2 value equal to or above 0.98 in order to calculate the pH values for the daily measurements from the calibration curve.* 
 
@@ -130,9 +130,10 @@ See full titration protocol
 Header Tanks:
 
 ***Never do this without consulting Hollie first***
+
 1. Log onto the Apex Fusion app.2. 
 2. Click on the dashboard icon. Once at the dashboard, EB8_1_L, EB8_1_XL, and EB8_1_A switches will show above each treatment's 3 measurement (pH, temperature, and salinity) graphs (in orange with white data points). 
-3. ***TURN OFF THE TOGGLE TO STOP THE CO2 FROM BEING INJECTED*** 
+3. ***TURN OFF THE TOGGLE TO STOP THE CO<sub>2</sub> FROM BEING INJECTED*** 
 4. Click on the Settings icon (grey tire-like icon) in the top right-hand corner of the desired probe. Ex: If calibration is needed for XL Header's pH probe - "PH_XL" will have a settings icon directly above and to the right of the title.
 5. In the settings of the desired probe, two boxes will appear: "Summary" and "Configuration". Under "Configuration", click the orange "Automatic Probe Calibration" option.
 	- If a graph of the tank's fluctuation appears, the general probe information was clicked instead of the settings icon. Click the back arrow to return to dashboard and try again.
@@ -146,7 +147,7 @@ Header Tanks:
 	7. Place the probe in the pH solution 10.0,swirl to measure, and wait for all readings (acceptable range, reading has settled, and time left) to stabilize. Click "Next" when stabilized. 
 	8. Click "Finish" once done. 
 6. Scroll to top of the screen and click the cloud icon with an arrow pointing upwards. *This will push the data back to the Apex "brain". **The calibration will not be saved without clicking this icon.***
-7. ***TURN THE TOGGLE TO AUTO TO START THE CO2 INJECTION AGAIN*** 
+7. ***TURN THE TOGGLE TO AUTO TO START THE CO<sub>2</sub> INJECTION AGAIN*** 
 
 Back to [Daily_Tasks](#Daily_Tasks). 
 
