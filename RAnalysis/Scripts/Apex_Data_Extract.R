@@ -10,7 +10,7 @@ library("plyr")
 setwd("~/MyProjects/BioMin_HIS/RAnalysis/Data") #set working directory
 #############################################################
 
-xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806220000&days=3") #read in the date (180620) plus # days (days=4) of Apex data
+xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806240000&days=4") #read in the date (180620) plus # days (days=4) of Apex data
 
 Apex.Data <- ldply(xmlToList(xmlfile), data.frame) #convert xml to dataframe
 
