@@ -23,12 +23,12 @@ library(seacarb) #used to calculate TA
 library(tidyverse)
 
 #CHANGE THESE VALUES EVERY DAY----------------------------------------------
-path<-"Data/20180703" #the location of all your titration files
-massfile<-"20180703mass_Run3.csv" # name of your file with masses
-titrationfile<-'20180703_Run3.csv'# name of the last titration file run
+path<-"Data/20180706" #the location of all your titration files
+massfile<-"20180706mass_Run2.csv" # name of your file with masses
+titrationfile<-'20180706_Run2.csv'# name of the last titration file run
 
 # Date that the data were run
-date<-'20180702'
+date<-'20180706'
 
 
 #DO NOT CHANGE ANYTHING BELOW THIS LINE UNLESS A NEW BOTTLE OF ACID IS USED
@@ -137,7 +137,7 @@ for(i in 1:nrows) {
 }
 TA[,2:3]<-sapply(TA[,2:3], as.numeric) # make sure the appropriate columns are numeric
 #exports your data as a CSV file
-write.table(TA,paste0(path,"/",date,"_TA_Output",".csv"),sep=",", row.names=FALSE)
+write.table(TA,paste0(path,"/","TA_Output_",titrationfile),sep=",", row.names=FALSE)
 
 cumu.data <- read.csv("Data/Cumulative_TA_Output.csv", header=TRUE, sep=",")
 update.data <- rbind(cumu.data, TA)

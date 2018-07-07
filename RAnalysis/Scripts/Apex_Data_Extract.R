@@ -10,7 +10,7 @@ library("plyr")
 setwd("~/MyProjects/BioMin_HIS/RAnalysis/Data") #set working directory
 #############################################################
 
-xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806240000&days=10") #read in the date (180620) plus # days (days=4) of Apex data
+xmlfile <- xmlParse("http://166.122.78.194:80/cgi-bin/datalog.xml?sdate=1806240000&days=13") #read in the date (180620) plus # days (days=4) of Apex data
 
 Apex.Data <- ldply(xmlToList(xmlfile), data.frame) #convert xml to dataframe
 
@@ -47,10 +47,10 @@ par(mfrow=c(2,1))
 plot(as.numeric(as.character(Tmp_XL)) ~ Date.Time, All.Data, col = "grey", type="l", ylim=c(25.5, 30),  xlab="Time", ylab="Temperature °C")
 lines(as.numeric(as.character(Tmp_L)) ~ Date.Time, All.Data, col = "red")
 lines(as.numeric(as.character(Tmp_A)) ~ Date.Time, All.Data, col = "blue")
-axis.POSIXct(side=1, Probe.Data$Date.Time)
+axis.POSIXct(side=1, All.Data$Date.Time)
 
 plot(as.numeric(as.character(pH_XL)) ~ Date.Time, All.Data, col = "grey", type="l", ylim=c(7.1, 8.1),  xlab="Time", ylab="pH NBS")
 lines(as.numeric(as.character(pH_L)) ~ Date.Time, All.Data, col = "red")
 lines(as.numeric(as.character(pH_A)) ~ Date.Time, All.Data, col = "blue")
-axis.POSIXct(side=1, Probe.Data$Date.Time)
+axis.POSIXct(side=1, All.Data$Date.Time)
 dev.off()

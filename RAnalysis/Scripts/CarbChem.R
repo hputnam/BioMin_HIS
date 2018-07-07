@@ -137,6 +137,7 @@ TA <- read.csv("Cumulative_TA_Output.csv", header=TRUE, sep=",", na.strings="NA"
 SW.chem$Sample.ID <- paste(SW.chem$Date, SW.chem$Sample.ID, sep='_') #generate new row with concatenated sample id
 SW.chem <- merge(SW.chem,TA, by="Sample.ID", all = TRUE, sort = T) #merge seawater chemistry with total alkalinity
 SW.chem <- na.omit(SW.chem) #remove NA
+SW.chem <- subset(SW.chem, TA.Run =="Yes")
 
 #Calculate CO2 parameters using seacarb
 carb.output <- carb(flag=8, var1=SW.chem$pH.Total, var2=SW.chem$TA/1000000, S= SW.chem$Salinity, T=SW.chem$Temperature, P=0, Pt=0, Sit=0, pHscale="T", kf="pf", k1k2="l", ks="d") #calculate seawater chemistry parameters using seacarb
