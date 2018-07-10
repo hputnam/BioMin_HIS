@@ -149,6 +149,7 @@ carb.output$DIC <- carb.output$DIC*1000000 #convert to µmol kg-1
 carb.output <- carb.output[,-c(1,4,5,8,10:13,19)] #subset variables of interest
 carb.output <- cbind(SW.chem$Date,  SW.chem$Sample.ID,  SW.chem$Treatment, SW.chem$Period1, SW.chem$Type.x, carb.output) #combine the sample information with the seacarb output
 colnames(carb.output) <- c("Date",  "Sample.ID",  "Treatment", "Period1","Type",	"Salinity", "Temperature", "pH",	"CO2",	"pCO2","HCO3",	"CO3",	"DIC", "TA",	"Aragonite.Sat") #Rename columns to describe contents
+carb.output$Tank <- substring(carb.output$Sample.ID, 10)
 write.table(carb.output, "~/MyProjects/BioMin_HIS/RAnalysis/Output/Seawater_chemistry_table_Output_All.csv", sep=",", row.names = FALSE) #save data
 
 
@@ -179,6 +180,16 @@ plot(carb.output2$Treatment, carb.output2$pCO2, xlab="Treatment", ylab="pCO2 µm
 plot(carb.output2$Treatment, carb.output2$Salinity, xlab="Treatment", ylab="Salinity psu", ylim=c(33,35))
 plot(carb.output2$Treatment, carb.output2$TA, xlab="Treatment", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2250))
 plot(carb.output2$Treatment, carb.output2$Aragonite.Sat, xlab="Treatment", ylab="Aragonite Saturation State", ylim=c(0,4))
+dev.off()
+
+pdf("~/MyProjects/BioMin_HIS/RAnalysis/Output/Mont1_Water_Chem_Tanks_withTA.pdf")
+par(mfrow=c(3,2))
+plot(as.factor(carb.output2$Tank), carb.output2$Temperature, xlab="Tank", ylab="Temperature°C", ylim=c(24,29), las=2)
+plot(as.factor(carb.output2$Tank), carb.output2$pH, xlab="Tank", ylab="pH Total Scale", ylim=c(7.0,8.2), las=2)
+plot(as.factor(carb.output2$Tank), carb.output2$pCO2, xlab="Tank", ylab="pCO2 µmol kg-1", ylim=c(350,3500), las=2)
+plot(as.factor(carb.output2$Tank), carb.output2$Salinity, xlab="Tank", ylab="Salinity psu", ylim=c(33,35), las=2)
+plot(as.factor(carb.output2$Tank), carb.output2$TA, xlab="Tank", ylab="Total Alkalinity µmol kg-1", ylim=c(2100,2450), las=2)
+plot(as.factor(carb.output2$Tank), carb.output2$Aragonite.Sat, xlab="Tank", ylab="Aragonite Saturation State", ylim=c(0,4), las=2)
 dev.off()
 
 
