@@ -1,10 +1,10 @@
 sample,mass,salinity,Sample.ID,Type
-20180626_Tank10,59.02,34.46,Tank10,Tank
 20180626_Tank11,59.46,34.41,Tank11,Tank
-20180626_Tank12,59.13,34.39,Tank12,Tank
+20180626_Conical18,59.24,34.29,Conical18,Conical
 20180626_Tank13,59.19,34.43,Tank13,Tank
+20180626_Conical16,59,34.35,Conical16,Conical
+20180626_Tank10,59.02,34.46,Tank10,Tank
 20180626_Tank14,59.06,34.38,Tank14,Tank
 20180626_Tank15,59.08,34.45,Tank15,Tank
-20180626_Conical16,59,34.35,Conical16,Conical
 20180626_Conical17,59.13,34.3,Conical17,Conical
-20180626_Conical18,59.24,34.29,Conical18,Conical
+20180626_Tank12,59.13,34.39,Tank12,Tank
