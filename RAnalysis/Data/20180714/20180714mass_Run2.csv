@@ -1,8 +1,7 @@
 sample,mass,salinity,Sample.ID,Type
 20180714_Tank10,59.51,34.34,Tank10,Tank
+20180714_Tank15,59.7,34.61,Tank15,Tank
 20180714_Tank11,60,43.39,Tank11,Tank
-20180714_Tank12,59.01,34.33,Tank12,Tank
 20180714_Tank13,59.25,34.37,Tank13,Tank
 20180714_Tank14,59.59,34.51,Tank14,Tank
-20180714_Tank15,59.7,34.61,Tank15,Tank
-, ,,,
+20180714_Tank12,59.01,34.33,Tank12,Tank
